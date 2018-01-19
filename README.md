@@ -12,6 +12,20 @@ Use your plugin manager of choice.
   - Add `Plugin 'JohanGustafsson91/format-ack-search-from-selection'`
   - Run `:BundleInstall`
 
+## Basic usage
+- todo
+
+## Basic options
+
+#### Set file path to python script
+Default is `~/.vim/bundle/format-ack-search-from-selection/plugin/`
+
+```
+let g:format_ack_search_from_selection_filepath = 'new/file/path/'
+```
+
+
+
 ## Todo
 
 1. Add explanation
