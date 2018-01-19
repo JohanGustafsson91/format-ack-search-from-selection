@@ -1,8 +1,7 @@
 # format-ack-search-from-selection
 A vim plugin to search current selection with Ack
 
-## NOTE
-- This plugin is in progress. DO NOT USE IT YET!
+<div style='position:relative;padding-bottom:54%'><iframe src='https://gfycat.com/ifr/FantasticBoldBillygoat' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0' allowfullscreen></iframe></div>
 
 ## Installation
 
@@ -34,7 +33,7 @@ let g:format_ack_search_from_selection_filepath = 'new/file/path/'
 ```
 
 
-## Todo
+#### TODOs
 
 _Please feel free to send a pull request_
 
