@@ -8,17 +8,9 @@ A vim plugin to search current selection with Ack
 
 Use your plugin manager of choice.
 
-- [Pathogen](https://github.com/tpope/vim-pathogen)
-  - `git clone https://github.com/JohanGustafsson91/format-ack-search-from-selection ~/.vim/bundle/format-ack-search-from-selection`
 - [Vundle](https://github.com/gmarik/vundle)
-  - Add `Bundle 'https://github.com/JohanGustafsson91/format-ack-search-from-selection'` to .vimrc
+  - Add `Plugin 'JohanGustafsson91/format-ack-search-from-selection'`
   - Run `:BundleInstall`
-- [NeoBundle](https://github.com/Shougo/neobundle.vim)
-  - Add `NeoBundle 'https://github.com/JohanGustafsson91/format-ack-search-from-selection'` to .vimrc
-  - Run `:NeoBundleInstall`
-- [vim-plug](https://github.com/junegunn/vim-plug)
-  - Add `Plug 'https://github.com/JohanGustafsson91/format-ack-search-from-selection'` to .vimrc
-  - Run `:PlugInstall`
 
 ## Todo
 
