@@ -25,6 +25,6 @@ function! SearchWithFormattedSelection()
   execute (has('python3') ? 'py3file' : 'pyfile') '~/.vim/bundle/format-ack-search-from-selection/plugin/format_ack_search_from_selection.py'
 endfunc
 
-exe 'vmap <silent>' g:format_ack_search_from_selection_map ':call'.SearchWithFormattedSelection().'<CR>'
+execute 'vmap <silent>' g:format_ack_search_from_selection_map ':call '.SearchWithFormattedSelection().'<CR>'
 
 "vmap <silent> g:format_ack_search_from_selection_map :call SearchWithFormattedSelection()<CR>
