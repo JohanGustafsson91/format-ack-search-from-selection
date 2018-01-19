@@ -3,7 +3,7 @@ if !has('python3') && !has(python)
   finish
 endif
 
-if !exists('g:ctrlp_map')
+if !exists('g:format_ack_search_from_selection_map')
   let g:format_ack_search_from_selection_map = 'AS'
 endif
 
