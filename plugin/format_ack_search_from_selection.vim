@@ -17,7 +17,8 @@ endfunction
  
 function! SearchWithFormattedSelection()
   let g:selectedText = GetSelectedText()
-  execute (has('python3') ? 'py3file' : 'pyfile') 'format_ack_search_from_selection.py'
+  execute 'pwd'
+  "execute (has('python3') ? 'py3file' : 'pyfile') 'format_ack_search_from_selection.py'
 endfunc
 
 vmap <silent> AS  :call SearchWithFormattedSelection()<CR>
