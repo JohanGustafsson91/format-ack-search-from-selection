@@ -24,12 +24,17 @@ Default is `~/.vim/bundle/format-ack-search-from-selection/plugin/`
 let g:format_ack_search_from_selection_filepath = 'new/file/path/'
 ```
 
+#### Set ignore folders
+
+```
+ let g:format_ack_search_from_selection_ignore_dirs = ['node_modules', 'dist']
+```
 
 
 ## Todo
 
-1. Add explanation
-2. Add GIF
-3. Add custom key mapping
-4. Add ignore folders
+_Please feel free to send a pull request_
 
+- Add explanation
+- Add GIF
+- Add custom key mapping

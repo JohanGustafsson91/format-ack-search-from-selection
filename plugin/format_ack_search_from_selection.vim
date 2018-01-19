@@ -3,6 +3,10 @@ if !has('python3') && !has(python)
   finish
 endif
 
+if !exists('g:format_ack_search_from_selection_ignore_dirs')
+  let g:format_ack_search_from_selection_ignore_dirs = []
+endif
+
 if !exists('g:format_ack_search_from_selection_filepath')
   let g:format_ack_search_from_selection_filepath = '~/.vim/bundle/format-ack-search-from-selection/plugin/' 
 endif
@@ -21,8 +25,7 @@ endfunction
  
 function! SearchWithFormattedSelection()
   let g:selectedText = GetSelectedText()
-  "execute 'pwd'
   execute (has('python3') ? 'py3file ' : 'pyfile ') g:format_ack_search_from_selection_filepath . 'format_ack_search_from_selection.py'
 endfunc
 
-vmap <silent> AS  :call SearchWithFormattedSelection()<CR>
+vmap <silent> AS :call SearchWithFormattedSelection()<CR>
