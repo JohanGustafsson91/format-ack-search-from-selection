@@ -14,6 +14,8 @@ Use your plugin manager of choice.
 
 ## Todo
 
-1. Write a plugin
-2. Write documentation
+1. Add explanation
+2. Add GIF
+3. Add custom key mapping
+4. Add ignore folders
 
