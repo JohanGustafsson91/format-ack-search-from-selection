@@ -12,8 +12,11 @@ Use your plugin manager of choice.
   - Add `Plugin 'JohanGustafsson91/format-ack-search-from-selection'`
   - Run `:BundleInstall`
 
+__OBS!__ [Ack](https://github.com/mileszs/ack.vim) is required for the plugin to work.
+
 ## Basic usage
-- todo
+1. Select some text
+2. Press `AF` to search
 
 ## Basic options
 
