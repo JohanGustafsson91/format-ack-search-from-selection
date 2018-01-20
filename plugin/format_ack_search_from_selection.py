@@ -14,7 +14,7 @@ def getIgnoreDirString( ignoreDir ):
   else:
     return " --ignore-dir=" + " --ignore-dir=".join(map(str, ignoreDir))
 
-def searchWithAck( selectedText ):
+def searchWithAck( selectedText, ignoreDirs ):
   escapedString = espaceCharactersInString(selectedText)
   vim.command(getSearchOutputString(escapedString) + getIgnoreDirString(ignoreDirs))
 
@@ -26,7 +26,7 @@ selectedText = vim.eval('g:selectedText')
 ignoreDirs = vim.eval('g:format_ack_search_from_selection_ignore_dirs')
 
 if selectedText:
-  searchWithAck()
+  searchWithAck(selectedText, ignoreDirs)
 else:
   printErrorMessage()
 
