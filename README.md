@@ -19,7 +19,7 @@ __OBS!__ [Ack](https://github.com/mileszs/ack.vim) is required for the plugin to
 2. Press `AF` to search
 
 ##### Manual search
-`:call SearchWithFormattedSelection('My search query')` 
+`:call SearchAckWithFormattedSelection('My search query')` 
 
 ## Basic options
 

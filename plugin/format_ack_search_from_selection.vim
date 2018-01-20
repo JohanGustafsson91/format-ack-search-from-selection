@@ -23,9 +23,11 @@ function! GetSelectedText()
   return join(lines, "\n")
 endfunction
  
-function! SearchWithFormattedSelection(query)
+function! SearchAckWithFormattedSelection(query)
   let g:selectedText = strlen(a:query) > 0 ? a:query : GetSelectedText()
   execute (has('python3') ? 'py3file ' : 'pyfile ') g:format_ack_search_from_selection_filepath . 'format_ack_search_from_selection.py'
 endfunc
 
-vmap <silent> AS :call SearchWithFormattedSelection('')<CR>
+set 
+
+vmap <silent> AS :call SearchAckWithFormattedSelection('')<CR>
