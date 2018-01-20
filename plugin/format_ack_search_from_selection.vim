@@ -28,6 +28,4 @@ function! SearchAckWithFormattedSelection(query)
   execute (has('python3') ? 'py3file ' : 'pyfile ') g:format_ack_search_from_selection_filepath . 'format_ack_search_from_selection.py'
 endfunc
 
-set 
-
 vmap <silent> AS :call SearchAckWithFormattedSelection('')<CR>
