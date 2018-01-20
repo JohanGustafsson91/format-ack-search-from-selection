@@ -14,8 +14,12 @@ Use your plugin manager of choice.
 __OBS!__ [Ack](https://github.com/mileszs/ack.vim) is required for the plugin to work.
 
 ## Basic usage
+##### Search from selection
 1. Select some text
 2. Press `AF` to search
+
+##### Manual search
+`:call SearchWithFormattedSelection('My search query')` 
 
 ## Basic options
 
@@ -37,6 +41,4 @@ let g:format_ack_search_from_selection_filepath = 'new/file/path/'
 
 _Please feel free to send a pull request_
 
-- Add explanation
-- Add GIF
-- Add custom key mapping
+- [] Add custom key mapping:w
