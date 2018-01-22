@@ -19,7 +19,9 @@ def getIgnoreDirString(ignoreDir):
 
 def searchWithAck(selectedText, ignoreDirs):
     escapedString = espaceCharactersInString(selectedText)
-    vim.command(getSearchOutputString(escapedString) + getIgnoreDirString(ignoreDirs))
+    vim.command(
+        getSearchOutputString(escapedString) + getIgnoreDirString(ignoreDirs)
+    )
 
 
 def printErrorMessage():
