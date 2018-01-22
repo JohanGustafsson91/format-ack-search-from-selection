@@ -12,6 +12,7 @@ Use your plugin manager of choice.
   - Run `:BundleInstall`
 
 __OBS!__ [Ack](https://github.com/mileszs/ack.vim) is required for the plugin to work.
+
 __NOTE:__ The plugin has only been tested on Linux
 
 ## Basic usage
