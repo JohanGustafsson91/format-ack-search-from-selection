@@ -3,7 +3,7 @@ import vim
 
 
 def getSearchOutputString(formattedQuery):
-    return ("Ack " +  "\"" + formattedQuery + "\"" + " -i")
+    return ("Ack " + "\"" + formattedQuery + "\"" + " -i")
 
 
 def espaceCharactersInString(string):
