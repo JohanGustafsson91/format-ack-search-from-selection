@@ -14,17 +14,18 @@ def espaceCharactersInString(string):
 def getIgnoreDirString(ignoreDir):
     if len(ignoreDir) is 0:
         return ""
-  else:
-      return " --ignore-dir=" + " --ignore-dir=".join(map(str, ignoreDir))
+    else:
+        return " --ignore-dir=" + " --ignore-dir=".join(map(str, ignoreDir))
 
 
 def searchWithAck(selectedText, ignoreDirs):
     escapedString = espaceCharactersInString(selectedText)
-  vim.command(getSearchOutputString(escapedString) + getIgnoreDirString(ignoreDirs))
+    vim.command(getSearchOutputString(escapedString) + getIgnoreDirString(ignoreDirs))
 
 
 def printErrorMessage():
     print("format-ack-search-from-selection: No selected text")
+
 
 # Get values from VIM script
 selectedText = vim.eval('g:selectedText')
