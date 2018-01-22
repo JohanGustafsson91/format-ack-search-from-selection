@@ -12,6 +12,7 @@ Use your plugin manager of choice.
   - Run `:BundleInstall`
 
 __OBS!__ [Ack](https://github.com/mileszs/ack.vim) is required for the plugin to work.
+__NOTE:__ The plugin has only been tested on Linux
 
 ## Basic usage
 ##### Search from selection
@@ -41,4 +42,6 @@ let g:format_ack_search_from_selection_filepath = 'new/file/path/'
 
 _Please feel free to send a pull request_
 
-- [] Add custom key mapping:w
+- [ ] Add custom key mapping
+- [ ] Test on Mac
+- [ ] Test on Windows
