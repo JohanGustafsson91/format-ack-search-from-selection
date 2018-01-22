@@ -11,10 +11,8 @@ def espaceCharactersInString(string):
 
 
 def getIgnoreDirString(ignoreDir):
-    if len(ignoreDir) is 0:
-        return ""
-    else:
-        return " --ignore-dir=" + " --ignore-dir=".join(map(str, ignoreDir))
+    return "" if not len(ignoreDir) else\
+            " --ignore-dir=" + " --ignore-dir=".join(map(str, ignoreDir))
 
 
 def searchWithAck(selectedText, ignoreDirs):
