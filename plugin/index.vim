@@ -24,7 +24,7 @@ function! GetSelectedText()
 endfunction
  
 function! SearchAckWithFormattedQuery(query)
-  let g:selectedText = strlen(a:query) > 0 ? a:query : GetSelectedText()
+  let g:selected_text = strlen(a:query) > 0 ? a:query : GetSelectedText()
   execute (has('python3') ? 'py3file ' : 'pyfile ') g:format_ack_search_from_selection_filepath . 'index.py'
 endfunc
 
