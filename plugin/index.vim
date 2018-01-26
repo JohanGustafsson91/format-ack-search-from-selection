@@ -1,4 +1,4 @@
-if !has('python3') && !has(python)
+if !has('python3') && !has('python')
   echo "No python"
   finish
 endif
