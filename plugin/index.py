@@ -1,32 +1,36 @@
 import re
-import sys
 import vim
 
-def getSearchOutputString(formattedQuery):
-  return ("Ack " +  "\"" + formattedQuery + "\"" + " -i")
 
-def espaceCharactersInString(string):
-  return re.escape(string)
+def get_search_output(formated_query):
+    return ("Ack " + "\"" + formated_query + "\"" + " -i")
 
-def getIgnoreDirString(ignoreDir):
-  if len(ignoreDir) is 0:
-    return ""
-  else:
-    return " --ignore-dir=" + " --ignore-dir=".join(map(str, ignoreDir))
 
-def searchWithAck(selectedText, ignoreDirs):
-  escapedString = espaceCharactersInString(selectedText)
-  vim.command(getSearchOutputString(escapedString) + getIgnoreDirString(ignoreDirs))
+def escape_chars_in_string(string):
+    return re.escape(string)
 
-def printErrorMessage():
-  print("format-ack-search-from-selection: No selected text")
+
+def get_ignore_dir_string(ignore_dir):
+    return "" if not len(ignore_dir) else\
+            " --ignore-dir=" + " --ignore-dir=".join(map(str, ignore_dir))
+
+
+def search_with_ack(selected_text, ignore_dirs):
+    escaped_string = escape_chars_in_string(selected_text)
+    vim.command(
+        get_search_output(escaped_string) + get_ignore_dir_string(ignore_dirs)
+    )
+
+
+def print_err_msg():
+    print("format-ack-search-from-selection: No selected text")
+
 
 # Get values from VIM script
-selectedText = vim.eval('g:selectedText')
-ignoreDirs = vim.eval('g:format_ack_search_from_selection_ignore_dirs')
+selected_text = vim.eval('g:selected_text')
+ignore_dirs = vim.eval('g:format_ack_search_from_selection_ignore_dirs')
 
-if selectedText:
-  searchWithAck(selectedText, ignoreDirs)
+if selected_text:
+    search_with_ack(selected_text, ignore_dirs)
 else:
-  printErrorMessage()
-
+    print_err_msg()
